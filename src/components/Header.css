@@ -1,0 +1,53 @@
+/* Background Animation */
+header {
+    background: linear-gradient(-45deg, #4facfe, #0066fe, #4facfe, #2600fe);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+  }
+  
+  /* Gradient Animation Keyframes */
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Hover Effects */
+  nav a {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffc107;
+  }
+  
+  nav a span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: #ffc107;
+    transition: width 0.3s ease;
+  }
+  
+  nav a:hover span {
+    width: 100%;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    background: #001f3f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
