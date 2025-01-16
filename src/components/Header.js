@@ -61,9 +61,15 @@ const Header = () => {
           </Link>
           <Link
             to="/login"
+            className="border border-green-4000 text-white-500 hover:bg-blue-400 hover:text-white px-4 py-2 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300"
+          >
+            Login
+          </Link>
+          <Link
+            to="/signup"
             className="bg-yellow-400 text-blue-900 font-bold px-5 py-2 rounded-lg shadow-md hover:bg-yellow-500 transition"
           >
-            Login/Signup
+            Signup
           </Link>
         </nav>
 
